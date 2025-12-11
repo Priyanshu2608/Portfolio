@@ -3,6 +3,7 @@ import React from "react";
 import { Spotlight } from "./ui/spotlight-new";
 import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { ButtonsCard } from "./ui/ButtonMain";
 
 const Hero = () => {
   const first = "Hello There!";
@@ -12,7 +13,7 @@ const Hero = () => {
   // keep in sync with component's staggerInterval and durations (in seconds)
   const staggerInterval = 0.2;
 
-  const firstDuration = 1;   // same as used for first TextGenerateEffect
+  const firstDuration = 1.5;   // same as used for first TextGenerateEffect
   const secondDuration = 1.5;  // same as used for second
   const thirdDuration = 0;  // same as used for third
 
@@ -60,7 +61,9 @@ const Hero = () => {
                   delay={firstTotalTime + secondDuration + staggerInterval * (second.split(" ").filter(Boolean).length - 1)}
                 />
               </h2>
+
             </div>
+            <ButtonsCard/>
           </div>
         </div>
       </div>
