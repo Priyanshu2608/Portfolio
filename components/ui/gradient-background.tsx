@@ -78,8 +78,8 @@ export const GradientBackground = ({
 
       <div
         className={cn(
-          "absolute inset-0 blur-lg",
-          isSafari ? "blur-2xl" : "[filter:url(#blurMeGradient)_blur(40px)]"
+          "absolute inset-0 blur-sm",
+          isSafari ? "blur-lg" : "[filter:url(#blurMeGradient)_blur(20px)]"
         )}
       >
         <div
@@ -115,7 +115,7 @@ export const GradientBackground = ({
             `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
             `[transform-origin:calc(50%-200px)]`,
             `animate-fourth`,
-            `opacity-70`
+            `opacity-100`
           )}
         />
         <div
